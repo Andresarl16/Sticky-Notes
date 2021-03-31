@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Notas</title>
+</head>
+<body>
+    <div id = "header">
+        <h1>Notas</h1>
+        <p id="stt">Guarda tus notas aquí</p>
+    </div>
+    <div id="form">
+        <form name = "myForm" id="inputForm">
+            <input
+            type="text"
+            name = "titulo"
+            placeholder = "Titulo de la nota"
+            autocomplete = "off"
+            maxlength="9"
+            required
+            class="box"
+            id = "box-title">
+            <input type="text"
+            name = "texto"
+            placeholder= "Texto de la nota"
+            autocomplete = "off"
+            maxlength="88"
+            required
+            class="box"
+            id = "box-text">
+            <button id = "btnSubmit" type = "submit" value="submit" class="btn"> Crear nota </button>
+        </form>
+    </div>
+
+    <h3 id = "noNotes">No hay notas por el momento</h3>
+
+    <ul id="notes">
+    </ul>
+    <script src = "myScripts.js"></script>
+</body>
+</html>
